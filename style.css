@@ -1,0 +1,56 @@
+body{
+    margin: 0;
+    background-color: black;
+    color: white;
+    font-family: "Roboto";
+}
+
+#nav{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item{
+    color: white;
+    font-size: 4em;
+    
+    display: block;
+    margin-top: 15%;
+    height: 5%;
+    text-decoration: none;
+}
+
+#nav-items ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav-items{
+    margin-left: 10%;
+}
+
+hr.rounded{
+    border-top: 8px solid #6e6e6e;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#content{
+    margin-left: 10%;
+    margin-right: 10%
+}
+
+.subtitle{
+    font-size: 3em;
+    font-weight: bold;
+}
+
+#content{
+    height: 100vh;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 10%;
+}
