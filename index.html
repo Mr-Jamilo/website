@@ -3,7 +3,7 @@
 <head>
     <meta charset = "UTF-8">
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "homeStyleSheet.css">
     <link href = "https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <title>Assignment</title>
 </head>
@@ -12,9 +12,9 @@
         <nav id = "nav-items">
             <ul>
                 <li><a href = "./" class = "nav-item">Home</a></li>
-                <li><a href = "page1.html" class = "nav-item">Projects</a></li>
-                <li><a href = "page2.html" class = "nav-item">Blog</a></li>
-                <li><a href = "page3.html" class = "nav-item">Contact Me</a></li>
+                <li><a href = "projects.html" class = "nav-item">Projects</a></li>
+                <li><a href = "about.html" class = "nav-item">About Me</a></li>
+                <li><a href = "contact.html" class = "nav-item">Contact Me</a></li>
             </ul>
         </nav>
     </div>
@@ -25,41 +25,35 @@
         <!--Content starts here-->
         <div id = "project-section">
             <h2 class = "subtitle" >Projects</h2>
+            <div class = "vl"></div>
             <p class = "paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod dolor voluptate tenetur, iusto perspiciatis ab, omnis quis iste consequuntur quos inventore expedita? 
-                Rerum pariatur et eum nesciunt maxime minima, sunt nulla minus. 
-                Odio molestiae tempora est distinctio ipsa vel commodi sed neque ea at assumenda adipisci, amet cupiditate dicta? Autem, 
-                ducimus ex deserunt aliquid voluptas dignissimos nesciunt recusandae perspiciatis porro dolorum praesentium facere esse pariatur quod. 
-                Amet neque libero corrupti commodi iste eum quas laboriosam quidem minima numquam quo repellendus laudantium, 
-                totam fuga officia enim explicabo qui. Minima, sit blanditiis nulla, ipsam, culpa eos sunt officia voluptatem sequi possimus porro.
+                Throughout my time of learning computer science, I have worked on a variety of projects, including this website,
+                which have been useful in developing my programming skills in languages such as Java, Python, and HTML/CSS,
+                with more to come in the future.
             </p>
         </div>
-        <div id = "blog-section">
-            <h2 class = "subtitle">Blog</h2>
-            <p class = "paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod dolor voluptate tenetur, iusto perspiciatis ab, omnis quis iste consequuntur quos inventore expedita? 
-                Rerum pariatur et eum nesciunt maxime minima, sunt nulla minus. 
-                Odio molestiae tempora est distinctio ipsa vel commodi sed neque ea at assumenda adipisci, amet cupiditate dicta? Autem, 
-                ducimus ex deserunt aliquid voluptas dignissimos nesciunt recusandae perspiciatis porro dolorum praesentium facere esse pariatur quod. 
-                Amet neque libero corrupti commodi iste eum quas laboriosam quidem minima numquam quo repellendus laudantium, 
-                totam fuga officia enim explicabo qui. Minima, sit blanditiis nulla, ipsam, culpa eos sunt officia voluptatem sequi possimus porro.
-            </p>
-        </div>
+        <a href="projects.html"><button type = "button"> More info </button></a>
+        
         <div id = "contact-section">
             <h2 class = "subtitle">Contact Me</h2>
+            <div class = "vl"></div>
             <p class = "paragraph">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Quod dolor voluptate tenetur, iusto perspiciatis ab, omnis quis iste consequuntur quos inventore expedita? 
-                Rerum pariatur et eum nesciunt maxime minima, sunt nulla minus. 
-                Odio molestiae tempora est distinctio ipsa vel commodi sed neque ea at assumenda adipisci, amet cupiditate dicta? Autem, 
-                ducimus ex deserunt aliquid voluptas dignissimos nesciunt recusandae perspiciatis porro dolorum praesentium facere esse pariatur quod. 
-                Amet neque libero corrupti commodi iste eum quas laboriosam quidem minima numquam quo repellendus laudantium, 
-                totam fuga officia enim explicabo qui. Minima, sit blanditiis nulla, ipsam, culpa eos sunt officia voluptatem sequi possimus porro.
+                For any questions or inquiries, feel free to contact me through the form below or through my socials.
             </p>
         </div>
+        <form action = "contact.php" method = "post">
+            <label for = "name">Name:</label>
+            <input type = "text" id = "name" name = "name" placeholder = "Your name..">
+            <label for = "email">Email:</label>
+            <input type = "text" id = "email" name = "email" placeholder = "Your email..">
+            <label for = "subject">Subject:</label>
+            <textarea id = "subject" name = "subject" placeholder = "Write something.." style = "height:200px"></textarea>
+            <input type = "submit" value = "Submit">
+        </form>
         <!--Content ends here-->
     </section>
+    <footer>
+        <p>Jamie Lo</p>
+    </footer>
 </body>
 </html>
