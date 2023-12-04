@@ -5,6 +5,10 @@ body{
     font-family: "Roboto";
 }
 
+/*
+Navbar
+*/
+
 #nav{
     display: flex;
     justify-content: center;
@@ -47,11 +51,97 @@ ul{
     font-weight: bolder;
 }
 
+/*
+Content
+*/
+
 #content{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+/* 
+Project
+*/
+
+.projects-p{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.github-link{
+    color: white;
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+}
+
+.github-link:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
+
+.project-gallery, .system-project-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.project, .image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 2%;
+}
+
+.project:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.image:nth-child(even){
+    flex-direction: row-reverse;
+}
+
+.desc{
+    font-size: 1.2em;
+    padding-left: 3%;
+    padding-right: 3%;
+    width: 35%;
+}
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-right: 5%;
+    border: 5px solid transparent;
+    object-fit: cover;
+}
+
+img:hover{
+    border: 5px solid white;
+    transition: border 500ms ease;
+}
+
+.brief{
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+/* 
+About
+*/
+
+/*
+Contact
+*/
+
+#contact-p{
+    font-size: 1.5em;
 }
 
 .form-section{
@@ -101,13 +191,57 @@ textarea{
     resize: none;
 }
 
-@media screen and (max-width: 1000px){
+/*
+Responsiveness
+*/
+
+
+@media screen and (max-width: 768px){
+    body{
+        padding-top: 10vh;
+    }
+    
+    #nav, ul, .nav-item{
+        flex-direction: column;
+    }
+
+    #nav{
+        margin-bottom:3%;
+    }
+    
+    #content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    
     form{
         width: 100%;
         max-width: 100%;
+        box-sizing: border-box;
     }
     
     input, textarea{
         width: 100%;
+        box-sizing: border-box;
+    }
+
+    .project-gallery, .system-project-gallery{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .project, .image, .project:nth-child(even), .image:nth-child(even){
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .desc{
+        width: 100%;
+        margin: 5%;
     }
 }
