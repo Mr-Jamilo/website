@@ -5,6 +5,11 @@ body{
     font-family: "Roboto";
 }
 
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
 /* Nav */
 
 #nav{

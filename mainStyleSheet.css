@@ -5,6 +5,11 @@ body{
     font-family: "Roboto";
 }
 
+footer{
+    text-align: center;
+    font-style: italic;
+}
+
 /*
 Navbar
 */
@@ -13,7 +18,7 @@ Navbar
     display: flex;
     justify-content: center;
     height: 10vh;
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 
 ul{
@@ -68,17 +73,36 @@ Project
 
 .projects-p{
     font-size: 1.5em;
-    font-weight: bold;
 }
 
 .github-link{
     color: white;
     text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    font-weight: bolder;
 }
 
 .github-link:hover{
     text-decoration-color: rgba(255, 255, 255, 1);
     transition: text-decoration-color 500ms ease;
+}
+
+.brief{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+.brief-p{
+    width: 50%;
+} 
+
+.brief p{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
 }
 
 .project-gallery, .system-project-gallery{
@@ -112,6 +136,11 @@ Project
     width: 35%;
 }
 
+.desc p{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+
+}
 
 img{
     max-width: 100%;
@@ -127,14 +156,43 @@ img:hover{
     transition: border 500ms ease;
 }
 
-.brief{
-    font-size: 1.25em;
-    margin-bottom: 2%;
-}
+
 
 /* 
 About
 */
+
+.about-me-p{
+    font-size: 1.8em;
+    width: 50%;
+}
+
+.about-me-p h1{
+    text-align: center;
+}
+
+.about-me-p p{
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+}
+
+.contact-link{
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bolder;
+}
+
+.contact-link:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
+
+.skills-list{
+    list-style-type: disc;
+    display: block;
+    padding-left: 15%;
+
+}
 
 /*
 Contact
@@ -148,6 +206,7 @@ Contact
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 
 form{   
@@ -156,11 +215,11 @@ form{
     border: 2px solid white;
     border-radius: 15px;
     padding: 5%;
-    width: 50vw;
-    margin: auto;
+    margin: 2%;
 }
 
 input, textarea{
+    box-sizing: border-box;
     width: 100%;
     margin: 10px;
     padding: 10px;
@@ -191,10 +250,33 @@ textarea{
     resize: none;
 }
 
+#socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    
+}
+
+#socials p{
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.3em;
+}
+
+.social-link{
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    color: white;
+    font-weight: bolder;
+}
+
+.social-link:hover{
+    text-decoration-color: rgba(255, 255, 255, 1);
+    transition: text-decoration-color 500ms ease;
+}
 /*
 Responsiveness
 */
-
 
 @media screen and (max-width: 768px){
     body{
@@ -218,9 +300,11 @@ Responsiveness
     }
     
     form{
+        box-sizing: border-box;
         width: 100%;
         max-width: 100%;
-        box-sizing: border-box;
+        margin-left: 2%;
+        margin-right: 5%;
     }
     
     input, textarea{
@@ -228,6 +312,10 @@ Responsiveness
         box-sizing: border-box;
     }
 
+    .brief{
+        margin: 2%;
+    }
+    
     .project-gallery, .system-project-gallery{
         display: flex;
         flex-direction: column;
