@@ -73,34 +73,40 @@ Content
 #content{
     /* centered content with padding */
     margin-top: 0.5%;
+    padding-top: 5%;
+    padding-left: 15%;
+    padding-right: 15%;
+    
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 5%;
-    padding-left: 15%;
-    padding-right: 15%;
 }
 
 .subtitle{
     /* styling for the subtitles */
     width: 300px;
+    margin-right: 1%;
+
     font-size: 3.5em;
     text-align: right;
+    
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 1%;
 }
 
 .paragraph{
     /* styling for the paragraphs */
+    width: 80%;
+    padding-left: 2%;
+    margin: 30px auto;
+
     font-size: 1.5em;
+    
     border-left: 5px solid #6e6e6e;
     border-radius: 5px;
-    padding-left: 2%;
-    width: 80%;
-    margin: 30px auto;
+    
     display: flex;
     align-items: center;
 }
@@ -126,14 +132,17 @@ Content
 
 button{
     /* styling for the button */
-    text-align: center;
-    padding: 5%;
-    font-size: 1.5em;
     width: 120%;
+    padding: 5%;
+
+    text-align: center;
+    font-size: 1.5em;
+
     border: 2px solid white;
     background-color: black;
     color: white;
     border-radius: 15px;
+    
     transition-duration: 0.4s;
 }
 
@@ -148,7 +157,7 @@ button:hover{
 Responsiveness 
 */
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 768px){
     #nav{
         flex-direction: column;
         justify-content: center;

@@ -38,11 +38,13 @@ ul{
 
 .nav-item{
     /* Styling for each list item in navbar */
+    display: block;
+
     text-decoration: underline 0.1em rgba(255, 255, 255, 0);
     font-size: 1.5em;
-    display: block;
     color: white;
     text-align: center;
+    
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 10px;
@@ -138,6 +140,7 @@ Project
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
     width: 100%;
     margin-bottom: 2%;
 }
@@ -154,10 +157,11 @@ Project
 
 .desc{
     /* Styling for the description of each image */
-    font-size: 1.2em;
+    width: 35%;
     padding-left: 3%;
     padding-right: 3%;
-    width: 35%;
+    
+    font-size: 1.2em;
 }
 
 .desc p{
@@ -167,17 +171,20 @@ Project
 
 }
 
-img{
+.project-image{
     /* Styling for each image */
-    max-width: 100%;
-    height: auto;
-    border-radius: 15px;
+    width: 400px;
+    height: 300px;
+    max-width: 100%; 
     margin-right: 5%;
+    
     border: 5px solid transparent;
+    border-radius: 15px;
+    
     object-fit: cover;
 }
 
-img:hover{
+.project-image:hover{
     /* Styling for when the user hovers over an image */
     border: 5px solid white;
     transition: border 500ms ease;
@@ -189,8 +196,8 @@ About
 
 .about-me-p{
     /* Styling for the about me div*/
-    font-size: 1.8em;
     width: 50%;
+    font-size: 1.8em;
 }
 
 .about-me-p h1{
@@ -247,6 +254,7 @@ form{
     color: white;
     border: 2px solid white;
     border-radius: 15px;
+    
     padding: 5%;
     margin: 2%;
 }
@@ -257,8 +265,9 @@ input, textarea{
     width: 100%;
     margin: 10px;
     padding: 10px;
-    border-radius: 5px;
+   
     border: 2px solid white;
+    border-radius: 5px;
     background-color: black;
     color: white;
     outline: none;
@@ -279,6 +288,7 @@ input[type = submit]:hover{
 textarea{
     /* Styling for the textarea */
     resize: none;
+    height: 200px;
 }
 
 #socials{
@@ -287,7 +297,6 @@ textarea{
     justify-content: center;
     align-items: center;
     margin-top: 2%;
-    
 }
 
 #socials p{
@@ -332,14 +341,14 @@ Responsiveness
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        
         margin-top: 10vh;
     }
     
     form{
         box-sizing: border-box;
-        width: 100%;
+        width: 90vw;
         max-width: 100%;
-        margin-left: 2%;
         margin-right: 5%;
     }
     
@@ -347,9 +356,13 @@ Responsiveness
         width: 100%;
         box-sizing: border-box;
     }
-
+    
     .brief{
         margin: 2%;
+    }
+
+    .brief-p{
+        width: 80vw;
     }
     
     .project-gallery, .system-project-gallery{
@@ -366,8 +379,12 @@ Responsiveness
         align-items: center;
     }
 
+    .projects-p{
+        width: 100vw;
+    }
+    
     .desc{
-        width: 100%;
+        width: 80vw;
         margin: 5%;
     }
 }
