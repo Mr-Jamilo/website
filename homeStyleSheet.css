@@ -1,5 +1,5 @@
 body{
-    /* basic styling */
+    /* Basic styling */
     margin: 0;
     background-color: black;
     color: white;
@@ -7,7 +7,7 @@ body{
 }
 
 footer{
-    /* centered, italic text for footer */
+    /* Centered, italic text for footer */
     text-align: center;
     font-style: italic;
 }
@@ -17,14 +17,14 @@ Nav
 */
 
 #nav{
-    /* centered navbar with height and padding */
+    /* Centered navbar with height and padding */
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
 .nav-item{
-    /* styling for each list item in navbar */
+    /* Styling for each list item in navbar */
     color: white;
     font-size: 4em;
     
@@ -35,31 +35,31 @@ Nav
 }
 
 #nav-items ul{
-    /* styling for unordered list items in navbar */
+    /* Styling for unordered list items in navbar */
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 #nav-items{
-    /* styling for unordered list items in navbar */
+    /* Styling for unordered list items in navbar */
     margin-left: 10%;
 }
 
 .nav-item:hover{
-    /* styling for when the user hovers over a list item */
+    /* Styling for when the user hovers over a list item */
     text-decoration-color: rgba(255, 255, 255, 1);
     transform: scale(1.5);
     transition: transform 400ms ease, text-decoration-color 500ms ease;
 }
 
 .active{
-    /* styling for when the user is on the current page */
+    /* Styling for when the user is on the current page */
     font-weight: bolder;
 }
 
 hr.rounded{
-    /* styling for the horizontal line under the navbar */
+    /* Styling for the horizontal line under the navbar */
     border-top: 0.5vw solid #6e6e6e;
     border-radius: 5px;
     margin-left: 15%;
@@ -71,7 +71,7 @@ Content
 */
 
 #content{
-    /* centered content with padding */
+    /* Centered content with padding */
     margin-top: 0.5%;
     padding-top: 5%;
     padding-left: 15%;
@@ -84,7 +84,7 @@ Content
 }
 
 .subtitle{
-    /* styling for the subtitles */
+    /* Styling for the subtitles */
     width: 300px;
     margin-right: 1%;
 
@@ -97,7 +97,7 @@ Content
 }
 
 .paragraph{
-    /* styling for the paragraphs */
+    /* Styling for the paragraphs */
     width: 80%;
     padding-left: 2%;
     margin: 30px auto;
@@ -112,31 +112,32 @@ Content
 }
 
 #project-section, #contact-section {
-    /* styling for the project and contact sections */
+    /* Styling for the project and contact sections */
     box-sizing: border-box;
     display: flex;
 } 
 
 .contact-link{
-    /* styling for the contact link */
+    /* Styling for the contact link */
     text-decoration: underline 0.1em rgba(255, 255, 255, 0);
     color: white;
     font-weight: bolder;
 }
 
 .contact-link:hover{
-    /* styling for when the user hovers over the contact link */
+    /* Styling for when the user hovers over the contact link */
     text-decoration-color: rgba(255, 255, 255, 1);
     transition: text-decoration-color 500ms ease;
 }
 
-button{
-    /* styling for the button */
-    width: 120%;
-    padding: 5%;
+.info-button{
+    /* Styling for the button */
+    width: 8%;
+    padding: 1%;
 
     text-align: center;
     font-size: 1.5em;
+    text-decoration: none;
 
     border: 2px solid white;
     background-color: black;
@@ -146,8 +147,8 @@ button{
     transition-duration: 0.4s;
 }
 
-button:hover{
-    /* styling for when the user hovers over the button */
+.info-button:hover{
+    /* Styling for when the user hovers over the button */
     background-color: white;
     color: black;
     cursor: pointer;
@@ -173,6 +174,10 @@ Responsiveness
         margin-bottom: 5%;
     }
     
+    .info-button{
+        width: 100%;
+    }
+    
     #content{
         padding-left: 5%;
         padding-right: 5%;
@@ -189,5 +194,5 @@ Responsiveness
     
     #contact-section .paragraph{
         text-align: center;
-    }   
+    }
 }
